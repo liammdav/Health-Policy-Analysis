@@ -21,13 +21,27 @@ In this analysis, data is simulated for different types of insurance reimburseme
 - **Statsmodels** for econometric modeling and regression analysis
 - **Matplotlib** and **Seaborn** for data visualization and creating scatter plots
 
-## Results and Insights:
-- The **regression analysis** shows a clear relationship between **higher private insurance reimbursement rates** and **increased hospital profitability**, while **Medicare reimbursement rates** show a weaker relationship with profitability.
-- The **scatter plot** reveals that hospitals receiving higher private insurance reimbursements generally exhibit better profitability compared to those with higher Medicare reimbursements.
+## Results:
+The econometric analysis reveals the following insights:
+
+- **Private Insurance Reimbursement**:  
+  The **OLS regression** for private insurance reimbursement shows a clear, positive association with hospital profitability. Hospitals with higher private insurance reimbursement rates exhibit a significant increase in profitability. The model's **F-statistic** of **296.7** and **p-value** of **1.70e-52** suggest that the relationship between private insurance reimbursement and profitability is statistically significant. Additionally, the **coefficient** of **2.31** indicates that for every unit increase in private insurance reimbursement, hospital profitability increases by **2.31 units**.
+
+- **Medicare Reimbursement**:  
+  The OLS regression for Medicare reimbursement yields a more modest relationship between reimbursement rates and profitability. The **F-statistic** of **145.0** and **p-value** of **1.73e-29** confirm the significance of the relationship, but the impact of Medicare reimbursement on profitability is much weaker. The **coefficient** of **1.20** indicates that for every unit increase in Medicare reimbursement, hospital profitability increases by **1.20 units**.
+
+- **Statistical Significance**:  
+  Both regressions show statistical significance with **p-values** less than **0.05**, indicating that the relationships are unlikely to have occurred by chance. However, the magnitude of the coefficients is more substantial for private insurance reimbursement, highlighting its stronger impact on hospital profitability.
 
 ### Key Findings:
-- **Private insurance reimbursement rates** have a strong positive correlation with **hospital profitability**, indicating that hospitals are more financially stable when relying on private insurance funding.
-- **Medicare reimbursement rates** tend to have a lower impact on profitability, highlighting the financial challenges hospitals face when a significant portion of their revenue comes from Medicare.
+1. **Private Insurance Reimbursement and Profitability**:  
+   The regression analysis clearly indicates that higher private insurance reimbursement rates are strongly associated with increased hospital profitability. The OLS regression for private insurance reimbursement yielded an **R-squared** value of 0.373, suggesting that **37.3% of the variation in hospital profitability** can be explained by private insurance reimbursement rates alone. The coefficient for private insurance reimbursement was **2.31**, with a statistically significant p-value (**p < 0.001**), indicating a robust positive relationship between private insurance reimbursements and profitability.
+
+2. **Medicare Reimbursement and Profitability**:  
+   The relationship between Medicare reimbursement rates and hospital profitability is weaker, as evidenced by an **R-squared** value of 0.226 in the OLS regression for Medicare. This suggests that only **22.6% of the variation in hospital profitability** is explained by Medicare reimbursement rates. The coefficient for Medicare reimbursement was **1.20**, also statistically significant (**p < 0.001**), but the overall effect is less pronounced compared to private insurance reimbursements.
+
+3. **Impact of Reimbursement on Financial Sustainability**:  
+   Hospitals relying more heavily on Medicare funding face greater financial challenges compared to those with more private insurance funding. The weaker relationship between Medicare reimbursements and profitability underscores the ongoing financial pressures experienced by hospitals that depend on Medicare as a major source of revenue.
 
 ## Next Steps:
 - **Refining the model**: Future work could involve testing the model with **real-world data** to validate the findings and improve the robustness of the analysis.
@@ -42,7 +56,12 @@ You can view the code and run it to replicate the analysis on your local machine
 ---
 
 ## Conclusion:
-This project demonstrates how changes in **Medicare and private insurance reimbursement rates** can affect **hospital profitability**. By simulating data and using econometric techniques, it provides valuable insights into how hospitals are financially impacted by different reimbursement mechanisms, a crucial aspect of health policy.
+This analysis underscores the financial challenges faced by hospitals relying on Medicare reimbursements compared to those that benefit from private insurance reimbursements. The regression results show that private insurance reimbursement rates are a more substantial driver of hospital profitability, with a stronger and more statistically significant relationship than Medicare reimbursement rates.
+
+Given the lower reimbursement rates typically associated with Medicare, hospitals that depend more heavily on this funding source may struggle with profitability, potentially affecting their financial sustainability and capacity to provide quality care. On the other hand, hospitals that rely more on private insurance may be better positioned to maintain financial stability, as higher reimbursement rates correlate with greater profitability.
+
+The findings of this project provide valuable insights into the broader implications of reimbursement policies on the healthcare system. Future research could involve validating these results with real-world data and exploring more advanced econometric techniques, such as **panel data analysis**, to deepen our understanding of how reimbursement changes impact hospital finances over time.
+
 
 For further questions or comments, please feel free to reach out to me at:  
 Email: **liammdav@icloud.com**

@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
+import statsmodels.api as sm
 
 os.makedirs('results/hospital_financing_analysis_results', exist_ok=True)
 
@@ -42,7 +43,31 @@ plt.xlabel('Reimbursement Rate')
 plt.ylabel('Hospital Profitability')
 plt.legend(title='Reimbursement Type')
 
-
+# Save the scatter plot
 plt.savefig('results/hospital_financing_analysis_results/hospital_profitability_vs_reimbursement.png')
-plt.close()  # Close the plot to prevent it from displaying in interactive mode
+plt.close()
+
+# Save the data to CSV
 data.to_csv('results/hospital_financing_analysis_results/hospital_financing_data.csv', index=False)
+
+# OLS Regression Analysis (using Medicare reimbursement vs hospital profitability)
+X_medicare = sm.add_constant(data['medicare_reimbursement'])  # Add constant for intercept
+y_medicare = data['hospital_profitability_medicare']
+
+# OLS regression for Medicare Reimbursement and Hospital Profitability
+model_medicare = sm.OLS(y_medicare, X_medicare).fit()
+
+# Save the OLS regression results summary as a text file
+with open('results/hospital_financing_analysis_results/ols_regression_medicare_results.txt', 'w') as f:
+    f.write(model_medicare.summary().as_text())
+
+# OLS Regression Analysis (using Private Insurance reimbursement vs hospital profitability)
+X_private = sm.add_constant(data['private_insurance_reimbursement'])  # Add constant for intercept
+y_private = data['hospital_profitability_private']
+
+# OLS regression for Private Insurance Reimbursement and Hospital Profitability
+model_private = sm.OLS(y_private, X_private).fit()
+
+# Save the OLS regression results summary as a text file
+with open('results/hospital_financing_analysis_results/ols_regression_private_results.txt', 'w') as f:
+    f.write(model_private.summary().as_text())
