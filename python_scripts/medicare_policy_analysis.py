@@ -5,7 +5,6 @@ import seaborn as sns
 import statsmodels.api as sm
 import os
 
-# Ensure the necessary folder exists
 os.makedirs('results/medicare_policy_analysis_results', exist_ok=True)
 
 np.random.seed(42)
@@ -44,8 +43,8 @@ agg_data = data.groupby('year').agg({
 agg_data['year_policy'] = agg_data['year'] * agg_data['year'].apply(lambda x: 1 if x >= 2020 else 0)
 
 # Econometric Modeling -- Regression analysis (OLS)
-X = agg_data[['year', 'year_policy']]  # Include interaction term
-X = sm.add_constant(X)  # Add intercept
+X = agg_data[['year', 'year_policy']] 
+X = sm.add_constant(X)  
 y = agg_data['total_cost']
 
 # Fit OLS model
@@ -64,11 +63,9 @@ plt.xlabel("Year")
 plt.ylabel("Total Medicare Cost")
 plt.legend()
 
-# Save the plot to the results folder
 plt.savefig('results/medicare_policy_analysis_results/medicare_cost_trends.png')
-plt.close()  # Close the plot to prevent it from displaying in interactive mode
+plt.close()  
 
-# Optionally, save the aggregated data to a CSV file
 agg_data.to_csv('results/medicare_policy_analysis_results/medicare_aggregated_data.csv', index=False)
 
 print("Medicare Policy Analysis Complete")
