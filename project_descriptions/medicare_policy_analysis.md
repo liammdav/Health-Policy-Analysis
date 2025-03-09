@@ -35,7 +35,7 @@ In this project, we simulate data for **five U.S. states**: **California (CA)**,
 - **Sensitivity analysis**: Conducting **sensitivity analysis** to assess how different assumptions about policy change (e.g., varying the magnitude of cost increases) affect the results.
 
 ## Full Code for the Project:
-The full code for this analysis is located in the `medicare_policy_analysis.py` file.
+The full code for this analysis is located in the `(python_scripts/medicare_policy_analysis.py)` file.
 
 You can view the code and run it to replicate the analysis on your local machine or explore further.
 

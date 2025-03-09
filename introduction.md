@@ -7,9 +7,9 @@ As an **economics major** passionate about healthcare, I leverage my expertise i
 Each project combines **realistic or simulated datasets** and rigorous analysis to explore the economic impacts of health policies. Using **Python 3** and tools like **Pandas**, **NumPy**, **Statsmodels**, and **Matplotlib**, I analyze topics such as Medicare expenditures, insurance enrollment trends, hospital financial health, and patient affordability.
 
 ## Projects:
-- [Medicare Policy Impact Analysis](./medicare_policy_analysis.md)
-- [Hospital Financing and Reimbursement Analysis](./hospital_financing_analysis.md)
-- [Universal Healthcare Policy Simulation](./health_policy_simulation.md)
+- [Medicare Policy Impact Analysis](project_descriptions/medicare_policy_analysis.md)
+- [Hospital Financing and Reimbursement Analysis](project_descriptions/hospital_financing_analysis.md)
+- [Universal Healthcare Policy Simulation](project_descriptions/health_policy_simulation.md)
 
 ### Tools & Technologies:
 - **Python 3** for data analysis and programming
