@@ -21,8 +21,7 @@ In this project, we simulate data for **five U.S. states**: **California (CA)**,
 - **Statsmodels** for econometric modeling (Ordinary Least Squares regression)
 - **Matplotlib** and **Seaborn** for data visualization and generating the trend plot
 
-## Results and Insights:
-
+## Results:
 - The **OLS regression model** showed a statistically significant relationship between the **policy change** in **2020** and an increase in **Medicare expenditures**. The coefficient for `year_policy` (the policy change variable) was found to be **4.01 million**, suggesting a notable increase in **Medicare costs** as a result of the policy shift.
   
 - The model also highlighted that the **cost per enrollee** had a positive impact on the total Medicare expenditure, with the policy change in 2020 resulting in higher costs across the years following its implementation.
