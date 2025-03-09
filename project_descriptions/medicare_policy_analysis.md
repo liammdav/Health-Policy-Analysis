@@ -35,7 +35,7 @@ In this project, we simulate data for **five U.S. states**: **California (CA)**,
 - **Sensitivity analysis**: Conducting **sensitivity analysis** to assess how different assumptions about policy change (e.g., varying the magnitude of cost increases) affect the results.
 
 ## Full Code for the Project:
-[Medicare Policy Impact Analysis Python Script](python_scripts/medicare_policy_analysis.py)
+[Medicare Policy Impact Analysis Python Script](../python_scripts/medicare_policy_analysis.py)
 
 You can view the code and run it to replicate the analysis on your local machine or explore further.
 

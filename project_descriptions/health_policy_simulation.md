@@ -30,7 +30,7 @@ The **Universal Healthcare Policy Simulation** models the gradual implementation
 - **Alternative simulations**: Explore different adoption rates and policy scenarios.
 
 ## Full Code for the Project:
-[Universal Healthcare Policy Simulation Python Script](python_scripts/health_policy_simulation.py)
+[Universal Healthcare Policy Simulation Python Script](../python_scripts/health_policy_simulation.py)
 
 You can view the code and run it to replicate the analysis on your local machine or explore further.
 
