@@ -35,7 +35,7 @@ In this analysis, data is simulated for different types of insurance reimburseme
 - **Sensitivity analysis**: Conducting sensitivity analysis to explore how variations in reimbursement rates (e.g., changes in Medicare rates) impact profitability.
 
 ## Full Code for the Project:
-The full code for this analysis is located in the `(python_scripts/hospital_financing_analysis.py)` file.
+[Hospital Financing and Reimbursement Analysis Python Script](python_scripts/hospital_financing_analysis.py) 
 
 You can view the code and run it to replicate the analysis on your local machine or explore further.
 
