@@ -1,0 +1,28 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:        Public Coverage   R-squared:                       0.950
+Model:                            OLS   Adj. R-squared:                  0.944
+Method:                 Least Squares   F-statistic:                     161.4
+Date:                Sat, 08 Mar 2025   Prob (F-statistic):           8.77e-12
+Time:                        19:41:01   Log-Likelihood:                -35.049
+No. Observations:                  20   AIC:                             76.10
+Df Residuals:                      17   BIC:                             79.08
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+const          -992.3305    314.697     -3.153      0.006   -1656.284    -328.377
+Year              0.5079      0.156      3.257      0.005       0.179       0.837
+Policy Change     7.1726      1.973      3.636      0.002       3.011      11.335
+==============================================================================
+Omnibus:                        2.818   Durbin-Watson:                   2.308
+Prob(Omnibus):                  0.244   Jarque-Bera (JB):                1.265
+Skew:                           0.172   Prob(JB):                        0.531
+Kurtosis:                       1.817   Cond. No.                     1.88e+06
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.88e+06. This might indicate that there are
+strong multicollinearity or other numerical problems.
